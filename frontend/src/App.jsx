@@ -27,7 +27,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/hos/calculate/', {
+      const response = await axios.post('https://spotter-hos-planner.onrender.com/api/hos/calculate/', {
         start_location: formData.start_location,
         end_location: formData.end_location,
         distance_miles: parseFloat(formData.distance_miles),
